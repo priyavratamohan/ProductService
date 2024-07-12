@@ -1,14 +1,14 @@
-package dev.priyavrat.productservice.models;
+package dev.priyavrat.productservice.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class Product extends BaseModel{
+public class GenericProductDTO{
     private String title;
     private String description;
     private String image;
-    private Category category;
+    private String category;
     private double price;
 }

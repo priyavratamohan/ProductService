@@ -1,7 +1,8 @@
 package dev.priyavrat.productservice.services;
 
+import dev.priyavrat.productservice.dtos.GenericProductDTO;
 import dev.priyavrat.productservice.models.Product;
 
 public interface ProductService {
-    String getProductByID(Long id);
+    GenericProductDTO getProductByID(Long id);
 }

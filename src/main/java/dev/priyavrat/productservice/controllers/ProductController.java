@@ -1,5 +1,6 @@
 package dev.priyavrat.productservice.controllers;
 
+import dev.priyavrat.productservice.dtos.GenericProductDTO;
 import dev.priyavrat.productservice.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -23,7 +24,7 @@ public class ProductController {
     }
 
     @GetMapping("{id}")
-    public String getProductByID(@PathVariable("id") Long id){
+    public GenericProductDTO getProductByID(@PathVariable("id") Long id){
         return productService.getProductByID(id);
     }
     @DeleteMapping("{id}")

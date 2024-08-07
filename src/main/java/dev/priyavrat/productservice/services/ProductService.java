@@ -5,4 +5,6 @@ import dev.priyavrat.productservice.models.Product;
 
 public interface ProductService {
     GenericProductDTO getProductByID(Long id);
+
+    GenericProductDTO createProduct(GenericProductDTO product);
 }
